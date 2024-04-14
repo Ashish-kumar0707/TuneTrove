@@ -63,11 +63,6 @@ def hello_world():  # put application's code here
     return render_template('index.html')
 
 
-@app.route('/index2')
-def hello_world2():  # put application's code here
-    return render_template('index2.html')
-
-
 @app.route('/about')
 def about():  # put application's code here
     return render_template('about.html')
