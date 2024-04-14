@@ -1,175 +1,274 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TuneTrove</title>
-</head>
-<body style="margin: 0; padding: 0;">
-
-
-    <header style="background-color: #333; color: #fff; padding: 20px; text-align: center; margin: 0;">
-        <h1 style="margin: 0;"><a href="index.html" style="text-decoration: none;color: #fff;">TuneTrove</a></h1>
-        <nav style="margin-top: 10px;">
-            <a href="about.html" style="color: #fff; text-decoration: none; margin-right: 20px;">About Us</a>
-            <a href="contact.html" style="color: #fff; text-decoration: none;">Contact Us</a>
-        </nav>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <header
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+      "
+    >
+      <h1 style="margin: 0">
+        <a href="index.html" style="text-decoration: none; color: #fff"
+          >TuneTrove</a
+        >
+      </h1>
+      <nav style="margin-top: 10px">
+        <a
+          href="/about"
+          style="color: #fff; text-decoration: none; margin-right: 20px"
+          >About Us</a
+        >
+        <a href="/contact" style="color: #fff; text-decoration: none"
+          >Contact Us</a
+        >
+      </nav>
     </header>
-    
-    
-    <div style="width: 100%;">
-        <div style="margin-inline: auto; width: 500px;">
-    <h3>Ready to find your perfect playlist? Let us know what you're looking for, and we'll help you discover your next favorite tunes!</h3>
 
-        </div>
-        <div class="container d-flex justify-content-center align-items-center  " style="width: 500px; margin-inline: auto; display: flex; flex-direction: column; gap: 15px; height: 460px;" >
-            <form action="/subscriber" method="POST">
-                <div style="display: flex; flex-direction: column; gap: 15px;">
-                    <div >
-                        <div class="col " style="display: flex; gap: 5px; align-items: center; justify-content: flex-start;">
-                            <p style="width: 20%;">First Name</p>
-                            <div>
-                                <input type="text"  class="form-control" placeholder="First name"
-                                name="First_Name" required>
-                            </div>
-                           
-                        </div>
-                        <div class="col " style="display: flex; gap: 5px; align-items: center; justify-content: flex-start;">
-                            <p style="width: 20%;">Last Name</p>
-                            <div>
-                                <input type="text"  class="form-control" placeholder="Last name"
-                                name="Last_Name" required>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 5px; justify-content: flex-start; align-items: center;">
-                        <div style="width: 20%;"><span class="legend">Gender </span>  </div>
-                        <div>
-                             
-                        <fieldset id="setD">
-                            <input id="setD_male" type="radio" name="setD_gender">
-                            <label  style="margin-top: 10px;" for="setD_male">Male</label>
-                            <input id="setD_female" type="radio" name="setD_gender">
-                            <label  style="margin-top: 10px;" for="setD_female">Female</label>
-                            </fieldset>
-                        </div>
-                        
-                    </div>
-                    
-                    <div style="display: flex; gap: 5px; align-items: center; justify-content: flex-start;">
-                        <div style="width: 20%;">
-                            <label  style="font-size: 14px;margin-top: 10px;" class="form-label"> Favourite Artist </label>
-                        </div>
-                        <div>
-                            <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Artist" required>
-                                <option selected> Select an Artist</option>
-                                <option value="Eminem"> Eminem	 </option>
-                                <option value="Sia"> Sia	 </option>
-                                <option value="LadyGaga"> Lady Gaga	 </option>
-                                <option value="BrunoMars"> Bruno Mars	 </option>
-                                <option value="JustinBieber"> Justin Bieber	 </option>
-                                <option value="Coldplay"> Coldplay	 </option>
-                                <option value="Rihanna"> Rihanna </option>
-                                <option value="Maroon5"> Maroon 5 </option>
-                                <option value="DuaLipa"> Dua Lipa</option>
-                                <option value="Marshmello"> Marshmello </option>
-                                <option value="AlanWalker"> Alan Walker </option>
-                                <option value="SelenaGomez"> Selena Gomez </option>
-                                <option value="SelenaGomez&TheScene"> Selena Gomez & The Scene </option>
-                                <option value="Shakira"> Shakira </option>
-                                <option value="Beyonce"> Beyonce </option>
-                            </select>
-                        </div>
-                        
-                  
-                    </div>
-            
-                    <div style="display: flex; gap: 5px; align-items: center; justify-content: flex-start;">
-                        <div style="width: 20%;">
-                            <label  style="font-size: 14px;margin-top: 10px;" class="form-label"> <p>Select Genre </p></label>
-                        </div>
-                        <div>
-                            <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Genre" required>
-                                <option selected> Pick a Genre </option>
-                                <option value="acousticPop"> acoustic pop	 </option>
-                                <option value="alaskaIndie"> alaska indie </option>
-                                <option value="alternativer&b"> alternative r&b </option>
-                                <option value="artPop"> art pop	 </option>
-                                <option value="altHipHop"> alt hip hop	 </option>
-                                <option value="australianDance"> australian dance	 </option>
-                                <option value="australianHipHop"> australian hip hop </option>
-                                <option value="australianPop"> australian pop </option>
-                                <option value="barbadianPop"> barbadian pop </option>
-                                <option value="baroquePop"> baroque pop </option>
-                                <option value="belgianEdm"> belgian edm </option>
-                                <option value="bigRoom"> big room </option>
-                                <option value="boyBand">boy band </option>
-                                <option value="britishSoul"> british soul </option>
-                                <option value="brostep"> brostep </option>
-                                <option value="canadianContemporaryr&b"> canadian contemporary r&b </option>
-                                <option value="canadianLatin"> canadian latin </option>
-                                <option value="canadianPop"> canadian pop </option>
-                                <option value="canadianHipHop"> canadian hip hop </option>
-                                <option value="candyPop"> candy pop </option>
-                                <option value="celticRock"> celtic rock</option>
-                                <option value="chicagoRap">chicago rap</option>
-                                <option value="colombianPop"> colombian pop </option>
-                                <option value="complextro"> Virtual University </option>
-                                <option value="contemporaryCountry"> complextro </option>
-                                <option value="dance pop"> dance pop </option>
-                                <option value="danishPop"> danish pop </option>
-                                <option value="detroitPop"> detroit pop </option>
-                                <option value="downtempo">downtempo </option>
-                                <option value="edm"> edm </option>
-                                <option value="electro"> electro </option>
-                                <option value="electroHouse"> electro house </option>
-                                <option value="electronicTrap"> electronic trap </option>
-                                <option value="electroPop"> electro pop </option>
-                                <option value="escapeRoom"> escape room </option>
-                                <option value="folkPop"> folk pop </option>
-                                <option value="frenchIndiePop"> french indie pop </option>
-                                <option value="hipHop"> hip hop </option>
-                                <option value="hipPop"> hip pop </option>
-                                <option value="hollywood"> hollywood </option>
-                                <option value="house"> house </option>
-                                <option value="indiePop"> indie pop </option>
-                                <option value="irishsinger-songwriter"> irish singer-songwriter </option>
-                                <option value="latin"> latin </option>
-                                <option value="metropopolis"> metropopolis </option>
-                                <option value="moroccanPop"> moroccan pop </option>
-                                <option value="neoMellow"> neo mellow </option>
-                                <option value="permanentWave"> permanent wave </option>
-                                <option value="pop"> pop </option>
-                                <option value="tropicalHouse"> tropical house </option>
-                            </select>
-                        </div>
-                    
-                    </div>
-                    <div class="m-2 d-flex justify-content-end" >
-                        <button type="submit" class="btn btn-primary align-self-center" style="font-size: 0.75rem;font-weight: 20;">Save and move to preferences</button>
-                    </div>
-                    
+    <div style="width: 100%">
+      <div style="margin-inline: auto; width: 500px">
+        <h3>
+          Ready to find your perfect playlist? Let us know what you're looking
+          for, and we'll help you discover your next favorite tunes!
+        </h3>
+      </div>
+      <div
+        class="container d-flex justify-content-center align-items-center"
+        style="
+          width: 500px;
+          margin-inline: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          height: 460px;
+        "
+      >
+        <form action="/subscriber" method="POST">
+          <div style="display: flex; flex-direction: column; gap: 15px">
+            <div>
+              <div
+                class="col"
+                style="
+                  display: flex;
+                  gap: 5px;
+                  align-items: center;
+                  justify-content: flex-start;
+                "
+              >
+                <p style="width: 20%">First Name</p>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                    name="First_Name"
+                    required
+                  />
                 </div>
-            </form>
-        
-        </div>
+              </div>
+              <div
+                class="col"
+                style="
+                  display: flex;
+                  gap: 5px;
+                  align-items: center;
+                  justify-content: flex-start;
+                "
+              >
+                <p style="width: 20%">Last Name</p>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                    name="Last_Name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 5px;
+                justify-content: flex-start;
+                align-items: center;
+              "
+            >
+              <div style="width: 20%"><span class="legend">Gender </span></div>
+              <div>
+                <fieldset id="setD">
+                  <input id="setD_male" type="radio" name="setD_gender" />
+                  <label style="margin-top: 10px" for="setD_male">Male</label>
+                  <input id="setD_female" type="radio" name="setD_gender" />
+                  <label style="margin-top: 10px" for="setD_female"
+                    >Female</label
+                  >
+                </fieldset>
+              </div>
+            </div>
 
-       
+            <div
+              style="
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div style="width: 20%">
+                <label
+                  style="font-size: 14px; margin-top: 10px"
+                  class="form-label"
+                >
+                  Favourite Artist
+                </label>
+              </div>
+              <div>
+                <select
+                  class="form-select"
+                  style="font-size: 14px"
+                  aria-label="Default select example"
+                  name="Artist"
+                  required
+                >
+                  <option selected>Select an Artist</option>
+                  <option value="Eminem">Eminem</option>
+                  <option value="Sia">Sia</option>
+                  <option value="LadyGaga">Lady Gaga</option>
+                  <option value="BrunoMars">Bruno Mars</option>
+                  <option value="JustinBieber">Justin Bieber</option>
+                  <option value="Coldplay">Coldplay</option>
+                  <option value="Rihanna">Rihanna</option>
+                  <option value="Maroon5">Maroon 5</option>
+                  <option value="DuaLipa">Dua Lipa</option>
+                  <option value="Marshmello">Marshmello</option>
+                  <option value="AlanWalker">Alan Walker</option>
+                  <option value="SelenaGomez">Selena Gomez</option>
+                  <option value="SelenaGomez&TheScene">
+                    Selena Gomez & The Scene
+                  </option>
+                  <option value="Shakira">Shakira</option>
+                  <option value="Beyonce">Beyonce</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div style="width: 20%">
+                <label
+                  style="font-size: 14px; margin-top: 10px"
+                  class="form-label"
+                >
+                  <p>Select Genre</p></label
+                >
+              </div>
+              <div>
+                <select
+                  class="form-select"
+                  style="font-size: 14px"
+                  aria-label="Default select example"
+                  name="Genre"
+                  required
+                >
+                  <option selected>Pick a Genre</option>
+                  <option value="acousticPop">acoustic pop</option>
+                  <option value="alaskaIndie">alaska indie</option>
+                  <option value="alternativer&b">alternative r&b</option>
+                  <option value="artPop">art pop</option>
+                  <option value="altHipHop">alt hip hop</option>
+                  <option value="australianDance">australian dance</option>
+                  <option value="australianHipHop">australian hip hop</option>
+                  <option value="australianPop">australian pop</option>
+                  <option value="barbadianPop">barbadian pop</option>
+                  <option value="baroquePop">baroque pop</option>
+                  <option value="belgianEdm">belgian edm</option>
+                  <option value="bigRoom">big room</option>
+                  <option value="boyBand">boy band</option>
+                  <option value="britishSoul">british soul</option>
+                  <option value="brostep">brostep</option>
+                  <option value="canadianContemporaryr&b">
+                    canadian contemporary r&b
+                  </option>
+                  <option value="canadianLatin">canadian latin</option>
+                  <option value="canadianPop">canadian pop</option>
+                  <option value="canadianHipHop">canadian hip hop</option>
+                  <option value="candyPop">candy pop</option>
+                  <option value="celticRock">celtic rock</option>
+                  <option value="chicagoRap">chicago rap</option>
+                  <option value="colombianPop">colombian pop</option>
+                  <option value="complextro">Virtual University</option>
+                  <option value="contemporaryCountry">complextro</option>
+                  <option value="dance pop">dance pop</option>
+                  <option value="danishPop">danish pop</option>
+                  <option value="detroitPop">detroit pop</option>
+                  <option value="downtempo">downtempo</option>
+                  <option value="edm">edm</option>
+                  <option value="electro">electro</option>
+                  <option value="electroHouse">electro house</option>
+                  <option value="electronicTrap">electronic trap</option>
+                  <option value="electroPop">electro pop</option>
+                  <option value="escapeRoom">escape room</option>
+                  <option value="folkPop">folk pop</option>
+                  <option value="frenchIndiePop">french indie pop</option>
+                  <option value="hipHop">hip hop</option>
+                  <option value="hipPop">hip pop</option>
+                  <option value="hollywood">hollywood</option>
+                  <option value="house">house</option>
+                  <option value="indiePop">indie pop</option>
+                  <option value="irishsinger-songwriter">
+                    irish singer-songwriter
+                  </option>
+                  <option value="latin">latin</option>
+                  <option value="metropopolis">metropopolis</option>
+                  <option value="moroccanPop">moroccan pop</option>
+                  <option value="neoMellow">neo mellow</option>
+                  <option value="permanentWave">permanent wave</option>
+                  <option value="pop">pop</option>
+                  <option value="tropicalHouse">tropical house</option>
+                </select>
+              </div>
+            </div>
+            <div class="m-2 d-flex justify-content-end">
+              <button
+                type="submit"
+                class="btn btn-primary align-self-center"
+                style="font-size: 0.75rem; font-weight: 20"
+              >
+                Save and move to preferences
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    
-    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px; ">
-        <p style="font-size: 14px;">Developed by Ashish Kumar and Aman Kumar. &copy; 2024 All rights reserved.</p>
+
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      "
+    >
+      <p style="font-size: 14px">
+        Developed by Ashish Kumar and Aman Kumar. &copy; 2024 All rights
+        reserved.
+      </p>
     </footer>
-    
-    
-</body>
+  </body>
 </html>
-
-
-    
-
-
-
-
