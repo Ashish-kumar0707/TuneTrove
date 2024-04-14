@@ -3,95 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-      }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 0 20px;
-        min-height: 480px;
-      }
-      h1 {
-        margin-top: 0;
-      }
-      p {
-        line-height: 1.6;
-      }
-    </style>
+    <title>TuneTrove | About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header
-      style="
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        margin: 0;
-      "
-    >
-      <h1 style="margin: 0">
-        <a href="index.html" style="text-decoration: none; color: #fff"
-          >TuneTrove</a
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">TuneTrove</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </h1>
-      <nav style="margin-top: 10px">
-        <a
-          href="/about"
-          style="color: #fff; text-decoration: none; margin-right: 20px"
-          >About Us</a
-        >
-        <a href="/contact" style="color: #fff; text-decoration: none"
-          >Contact Us</a
-        >
-      </nav>
-    </header>
-    <div class="container">
-      <p>
-        Welcome to our website! We are a team of passionate developers dedicated
-        to creating innovative solutions for our users.
-      </p>
-      <p>
-        The development of music recommendation systems using ontologies and web
-        semantics has gained significant attention in recent years. By analyzing
-        user preferences, behavior, and past listening habits, these systems
-        suggest songs, albums, or artists to users that align with their
-        individual preferences. In this project, we have designed a music
-        recommendation system that recommends popular songs based on a chosen
-        genre or artist using their popularity score. Our system is able to
-        identify patterns and provide personalized recommendations that enhance
-        the listening experience for music lovers.
-      </p>
-      <p>
-        Feel free to explore our website and don't hesitate to
-        <a href="contact.html">contact us</a> if you have any questions or
-        feedback.
-      </p>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container container-xl">
+      <div class="row mt-4 justify-content-center">
+        <div class="col-10">
+          <h5>
+            Welcome to our website! We Aman and Ashish had developed Ontology
+            based music recommendation system.
+          </h5>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-10">
+          <p mt-4>
+            The development of music recommendation systems using ontologies and
+            web semantics has gained significant attention in recent years. By
+            analyzing user preferences, behavior, and past listening habits,
+            these systems suggest songs, albums, or artists to users that align
+            with their individual preferences. In this project, we have designed
+            a music recommendation system that recommends popular songs based on
+            a chosen genre or artist using their popularity score. Our system is
+            able to identify patterns and provide personalized recommendations
+            that enhance the listening experience for music lovers.
+          </p>
+          <p>
+            Feel free to explore our website and don't hesitate to
+            <a href="contact.html">contact us</a> if you have any questions or
+            feedback.
+          </p>
+        </div>
+      </div>
     </div>
-
-    <footer
-      style="
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      "
-    >
-      <p style="font-size: 14px">
-        Developed by Ashish Kumar and Aman Kumar. &copy; 2024 All rights
-        reserved.
-      </p>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <div
+        class="text-center p-3"
+        style="
+          background-color: rgba(0, 0, 0, 0.05);
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        "
+      >
+        © 2024 Copyright:
+        <span class="text-body">Developed by Ashish Kumar and Aman Kumar</span>
+      </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
